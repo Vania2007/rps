@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper Scissors</title>
+    <link rel="shortcut icon" href="./images/rock-paper-scissors.png" type="image/x-icon">
     <link rel="stylesheet" href="./style.css" />
     <script src="/socket.io/socket.io.js"></script>
     <script src="./client.js"></script>
@@ -25,10 +26,10 @@
       <div id="gameArea"  style="display: none;">
         You:
         <div id="player1Choice">
-           <button class="rock" onclick="sendChoice('Rock')">Rock</button>
-           <button class="paper" onclick="sendChoice('Paper')">Paper</button>
-           <button class="scissor" onclick="sendChoice('Scissor')">Scissors</button>
-           <button class="fire" onclick="sendChoice('Fire')">Fire</button>
+           <img class="rock" onclick="sendChoice('Rock')" src="./images/rock.png" alt="Rock"></img>
+           <img class="paper" onclick="sendChoice('Paper')" src="./images/paper.png" alt="Paper"></img>
+           <img class="scissor" onclick="sendChoice('Scissor')" src="./images/scissors.png" alt="Scissors"></img>
+           <img class="fire" onclick="sendChoice('Fire')" src="./images/fire.png" alt="Fire"></img>
          </div>
          Opponent:
             <div id="player2Choice">
